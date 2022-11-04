@@ -9,6 +9,7 @@ Types of Programming:
 **SQL is declarative**
 
 procedural -> "how" (Java, C)
+
 declarative -> "what"
 
 main components of SQL's Syntax:
