@@ -19,7 +19,6 @@ Bigger IT size, the more sluggish the database is and the slower the retrieval p
 
 SOLUTION: relational algebra
 
-#### RELATIONAL DATABASE MANAGEMENT SYSTEM ( RDBMS )
 
 
 
