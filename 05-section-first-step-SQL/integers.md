@@ -53,6 +53,7 @@ Decimal and numeric are used to salaries and dollars.
 |Float(5,3)|10.523|
 |----------|------|
 |10.5236789|10.524|
+|----------|------|
 
 10.524 is an approximate value.
 
@@ -65,6 +66,7 @@ The main difference between the fixed and the floating-point type is in the way 
 | ------------------------ | ----------- | --------- | ------------------------ |
 | float | 4 | single | 23 |
 | double | 8 | double | 53 |
+|--------|---|-------|------|
  
  
 
