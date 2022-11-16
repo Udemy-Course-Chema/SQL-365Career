@@ -66,7 +66,6 @@ The main difference between the fixed and the floating-point type is in the way 
 | ------------------------ | ----------- | --------- | ------------------------ |
 | float | 4 | single | 23 |
 | double | 8 | double | 53 |
-|--------|---|-------|------|
  
  
 
