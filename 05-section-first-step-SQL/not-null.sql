@@ -1,32 +1,38 @@
-drop table companies;
+-- DROP TABLE companies;
 
-create table companies(
-	company_id int auto_increment, 
-    company_name varchar(255) not null,
-    headquarters_phone_number varchar(255),
-    primary key ( company_id )
+CREATE TABLE companies(
+	company_id INT AUTO_INCREMENT, 
+    company_name VARCHAR(255) NOT NULL,
+    headquarters_phone_number VARCHAR(255),
+    PRIMARY KEY ( company_id )
 );
 
-alter table companies 
-modify company_name varchar(255) null;
+ALTER TABLE companies 
+MODIFY company_name VARCHAR(255) NULL;
 
+/**
+Este es el otro comentario
+*/
 -- Las dos son lo mismo.
 -- La diferencia es que con el Change puedes renombrar y con el MODIFY no. 
 #alter table companies
 #change column company_name company_name varchar(255) not null;
-alter table companies
-modify company_name varchar(255) not null;
+ALTER TABLE companies
+MODIFY company_name VARCHAR(255) NOT NULL;
 
-insert into companies( company_name, headquarters_phone_number )
-values ('IBM','+52 (555) 55-5555');
+INSERT INTO companies( company_name, headquarters_phone_number )
+VALUES ('IBM','+52 (555) 55-5555');
 
-select * from companies;
+SELECT 
+    *
+FROM
+    companies;
 
 -- exercise
 
-alter table companies
-modify headquarters_phone_number varchar(255) null;
+ALTER TABLE companies
+MODIFY headquarters_phone_number VARCHAR(255) NULL;
 
-alter table companies
-change column headquarters_phone_number headquarters_phone_number varchar(255) not null;
+ALTER TABLE companies
+CHANGE COLUMN headquarters_phone_number headquarters_phone_number VARCHAR(255) NOT NULL;
 
