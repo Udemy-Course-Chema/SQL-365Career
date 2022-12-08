@@ -22,3 +22,34 @@ from
     departments_duplicate d
 where 
 	m.dept_no = d.dept_no;
+
+
+-- Exercise
+
+select * from dept_manager;
+select * from employees;
+
+-- OLD SYNTAX
+select 
+	e.emp_no, e.first_name, e.last_name, m.dept_no, e.hire_date
+from 
+	employees e, 
+    dept_manager m
+where 
+	e.emp_no = m.emp_no;
+    
+-- NEW STYNTAX
+select 
+	e.emp_no, e.first_name, e.last_name, m.dept_no, e.hire_date
+from 
+	employees e
+join
+	dept_manager m
+on
+	e.emp_no = m.emp_no;
+    
+    
+
+    
+
+	
